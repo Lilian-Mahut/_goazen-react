@@ -1,3 +1,5 @@
+import './Login.scss';
+
 export default function Login() {
-  console.log('coucou');
+  return <p>PUTAIN CA MARCHE !</p>;
 }
