@@ -3,24 +3,16 @@
 export default function Header() {
   return (
     <header>
-      <div className="flex">
-        <div className="">
-          <div className="">Logo</div>
-          <div className="text-red-600">Nom de l'application</div>
+      <div className="container flex justify-between font-sans">
+        <div className="flex p-4">
+          <div className="text-red-600 p-3">Logo+Goazen!</div>
         </div>
-        <div className="">
-          <div className="">Burger Menu</div>
-          <div className="">Login</div>
+        <div className="flex p-4">
+          <div className="flex justify-between box-border h-14 w-32 border-2 border-slate-300 rounded-full p-3">
+            <div className="">Menu</div>
+            <div className="">Avatar</div>
+          </div>
         </div>
-        {/* A SUPPRIMER */}
-        <div className="bg-blue-500 text-white p-4">
-          <h1 className="text-2xl">Hello connard ! Tailwind CSS in React!</h1>
-
-          <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 mt-4 rounded">
-            Click Me
-          </button>
-        </div>
-        {/* UP SUPPRIMER */}
       </div>
     </header>
   );
