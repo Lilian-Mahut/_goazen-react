@@ -1,34 +1,25 @@
-import './Footer.scss';
-// import { Link } from 'react-router-dom';
+import './Footer.css';
 
 export default function Footer() {
   return (
     <footer>
-      <img src="" alt="Logo Goazen" />
-      <div className="footerLinks">
-        <p>A propos</p>
-        <p>Mentions légales</p>
-        <p>Conditions générales d'utilisation</p>
-        <p>Politique de protection des données personnelles</p>
-        <p>Contact</p>
-      </div>
-      <div className="socialNetworks">
-        {/* facebook */}
-        <p>
-          <img src="" alt="" />
-        </p>
-        {/* X */}
-        <p>
-          <img src="" alt="" />
-        </p>
-        {/* Discord */}
-        <p>
-          <img src="" alt="" />
-        </p>
-        {/* Instagram */}
-        <p>
-          <img src="" alt="" />
-        </p>
+      <div className="container flex justify-between">
+        <div className="">
+          <ul>
+            <li>Instagram</li>
+            <li>Facebook</li>
+            <li>X</li>
+          </ul>
+        </div>
+        <div className="">Made & Share with ❤</div>
+        <div className="socialNetworks">
+          <ul>
+            <li>A propos</li>
+            <li>F.A.Q.</li>
+            <li>Mentions légales</li>
+            <li>Conditions générales</li>
+          </ul>
+        </div>
       </div>
     </footer>
   );
