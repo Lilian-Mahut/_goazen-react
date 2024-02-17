@@ -1,15 +1,17 @@
 import './App.css';
 import Layout from './components/layout/Layout';
 import { useTranslation, Trans } from 'react-i18next';
+import { useState } from 'react';
 
 const lngs = {
   en: { nativeName: 'English' },
   fr: { nativeName: 'French' },
-  sp: { nativeName: 'Spanish' },
 };
 
 export default function App() {
   const { t, i18n } = useTranslation();
+  const [count, setCounter] = useState(0);
+
   return (
     <>
       <div>
@@ -20,12 +22,18 @@ export default function App() {
               fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal',
             }}
             type="submit"
-            onClick={() => i18n.changeLanguage(lng)}
+            onClick={() => {
+              i18n.changeLanguage(lng);
+              setCounter(count + 1);
+            }}
           >
             {lngs[lng].nativeName}
           </button>
         ))}
       </div>
+      <p>
+        <i>{t('counter', { count })}</i>
+      </p>
       <Trans i18nKey="description.part1">
         Edit <code>src/App.js</code> and save to reload.
       </Trans>

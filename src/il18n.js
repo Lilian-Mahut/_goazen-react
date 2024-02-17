@@ -23,6 +23,14 @@ i18n
             part1: 'Edit <l>scr/App.js</l> and save to reload.',
             part2: 'Learn React',
           },
+          footer: {
+            part1: 'About',
+            part2: 'F.A.Q.',
+            part3: 'Legal Notice',
+            part4: 'Terms and conditions',
+          },
+          counter_one: 'Changed language just once',
+          counter_other: 'Changed language already {{count}} times',
         },
       },
       fr: {
@@ -31,14 +39,14 @@ i18n
             part1: 'Editer <l>scr/App.js</l> et sauvegarder pour recharger.',
             part2: 'Apprendre React',
           },
-        },
-      },
-      sp: {
-        translation: {
-          description: {
-            part1: 'Editar <l>scr/App.js</l> y guardar para recargar.',
-            part2: 'Aprender reaccionar',
+          footer: {
+            part1: 'A propos',
+            part2: 'F.A.Q.',
+            part3: 'Mentions légales',
+            part4: 'Conditions générales',
           },
+          counter_one: 'Changer la langue une fois',
+          counter_other: 'Langue déjà changée {{count}} fois',
         },
       },
     },
