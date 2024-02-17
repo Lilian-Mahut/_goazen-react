@@ -1,15 +1,35 @@
 {
   "name": "desktop",
   "version": "0.1.0",
+  "license": "MIT",
+  "author": "Lilian Mahut <contact@lilianmahut.dev> (https://lilianmahut.dev/)",
+  "contributors": [
+    {
+      "name": "olivier",
+      "email": "adresse@add.de",
+      "url": "http://adresse.com"
+    }
+  ],
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lilian-Mahut/_goazen-react.git"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
-    "@craco/craco": "^7.1.0",
     "i18next": "^23.8.2",
+    "i18next-browser-languagedetector": "^7.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-i18next": "^14.0.5",
-    "react-router-dom": "^6.22.0",
+    "react-i18next": "14.0.5",
+    "react-router-dom": "6.22.0",
     "react-scripts": "5.0.1",
+    "tailwindcss": "^3.4.1",
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
@@ -17,17 +37,10 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "autoprefixer": "^9.8.8",
+    "autoprefixer": "^10.4.17",
     "postcss": "^8.4.35",
     "postcss-flexbugs-fixes": "^5.0.2",
-    "postcss-preset-env": "^9.3.0",
-    "tailwindcss": "^3.4.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "postcss-preset-env": "^9.3.0"
   },
   "eslintConfig": {
     "extends": [
