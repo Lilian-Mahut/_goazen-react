@@ -1,0 +1,25 @@
+{
+  "common": {
+    "confirm": "Confirmer",
+    "cancel": "Annuler"
+  },
+  "validation": {
+    "validEmail": "Adresse email non valide"
+  },
+  "glossary": {
+    "event": "évènement",
+    "location": "localisation"
+  },
+  "description": {
+    "part1": "Editer <code>src/App.js</code> et sauvegarder pour recharger.",
+    "part2": "Apprendre React"
+  },
+  "footer": {
+    "part1": "A propos",
+    "part2": "F.A.Q.",
+    "part3": "Mentions légales",
+    "part4": "Termes et conditions"
+  },
+  "counter": "Langue changée une seule fois",
+  "counter_plural": "Langue changée {{count}} fois"
+}

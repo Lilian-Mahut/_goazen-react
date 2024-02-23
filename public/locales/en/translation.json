@@ -1,0 +1,17 @@
+{
+  "common": {},
+  "validation": {},
+  "glossary": {},
+  "description": {
+    "part1": "Edit <code>src/App.js</code> and save to reload.",
+    "part2": "Learn React"
+  },
+  "footer": {
+    "part1": "About",
+    "part2": "F.A.Q.",
+    "part3": "Legal Notice",
+    "part4": "Terms and conditions"
+  },
+  "counter": "Changed language just once",
+  "counter_plural": "Changed language already {{count}} times"
+}

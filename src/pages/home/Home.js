@@ -1,19 +1,24 @@
 import logo from '../../assets/images/logo.svg';
-import './Home.scss';
+import './Home.css';
 import { useTranslation, Trans } from 'react-i18next';
 import { useState } from 'react';
 
-const lngs = {
-  en: { nativeName: 'English' },
-  fr: { nativeName: 'French' },
-};
+// const lngs = {
+//   en: { nativeName: 'English' },
+//   fr: { nativeName: 'French' },
+// };
 
 export default function Home() {
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation(['translation', 'common']);
   const [count, setCounter] = useState(0);
+  const [lngs] = useState({
+    en: { nativeName: 'English' },
+    fr: { nativeName: 'French' },
+  });
+
   return (
     <>
-      <div className="App">
+      <div className="App flex flew-column">
         <img src={logo} className="App-logo" alt="logo" />
         <p>CECI EST LA PAGE HOME</p>
         <a

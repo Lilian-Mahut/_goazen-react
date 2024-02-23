@@ -11,6 +11,7 @@ export default function Header() {
           </div>
         </div>
         <div className="flex p-4">
+          Mettre mon lieu sur Goazen
           <img src={iconLang} className="" alt="lang" width="26" height="26" />
           <div className="flex justify-between box-border h-14 w-32 border-2 border-slate-300 rounded-full p-3">
             <div className="">Menu</div>

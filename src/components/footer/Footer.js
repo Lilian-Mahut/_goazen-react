@@ -12,24 +12,24 @@ const lngs = {
 
 export default function Footer() {
   const { t, i18n } = useTranslation();
+  const year = new Date().getFullYear();
   return (
     <footer>
-      <div className="container flex justify-between">
+      <div className="container flex justify-around">
+        <div>© {year} Goazen</div>
         <div className="">
-          <ul>
-            <li>
-              <img src={iconInstagram} alt="Instagram" />
-            </li>
-            <li>
-              <img src={iconFacebook} alt="Facebook" />
-            </li>
-            <li>
-              <img src={iconX} alt="X" />
-            </li>
+          <ul className="flex flex-row">
+            <li>{t('footer.part1')}</li>
+            <li>·</li>
+            <li>{t('footer.part2')}</li>
+            <li>·</li>
+            <li>{t('footer.part3')}</li>
+            <li>·</li>
+            <li>{t('footer.part4')}</li>
           </ul>
         </div>
         {/* CHANGE LANGUAGE */}
-        <div>
+        <div className="flex">
           <img src={iconLang} className="" alt="lang" width="26" height="26" />
           {Object.keys(lngs).map((lng) => (
             <button
@@ -47,13 +47,29 @@ export default function Footer() {
           ))}
         </div>
         {/* END LANGUAGE */}
-        <div className="">Made & Share with ❤</div>
-        <div className="socialNetworks">
-          <ul>
-            <li>{t('footer.part1')}</li>
-            <li>{t('footer.part2')}</li>
-            <li>{t('footer.part3')}</li>
-            <li>{t('footer.part4')}</li>
+        <div className="">
+          <ul className="flex">
+            <li>
+              <img
+                src={iconInstagram}
+                alt="Instagram"
+                className=""
+                width="22"
+                height="22"
+              />
+            </li>
+            <li>
+              <img
+                src={iconFacebook}
+                alt="Facebook"
+                className=""
+                width="22"
+                height="22"
+              />
+            </li>
+            <li>
+              <img src={iconX} alt="X" className="" width="22" height="22" />
+            </li>
           </ul>
         </div>
       </div>
